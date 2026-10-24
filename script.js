@@ -4,7 +4,7 @@
 const translations = {
   en: {
     skip: 'Skip to content', navAbout: 'About', navProjects: 'Projects', navWeb: 'Web Development', navSkills: 'Skills', navContact: 'Contact',
-    downloadCV: 'Download CV', menu: 'Menu', close: 'Close', openToWork: '<span class="status-dot"></span> Open to entry-level opportunities', hello: "Hello, I'm", heroRole: 'Mechatronics Engineering Graduate',
+    downloadCV: 'Download CV', emailSocial: 'Email ↗', accuracyPill: '92% accuracy', skillMicrocontrollers: 'Microcontrollers', skillSensors: 'Sensors &amp; Actuators', skillComputerVision: 'Computer Vision', skillHardwareTroubleshooting: 'Hardware troubleshooting', skillPLC: 'PLC Ladder Logic', skillFuzzyLogic: 'Fuzzy Logic', skillPID: 'PID Control', logoAlt: 'AY logo', menu: 'Menu', close: 'Close', openToWork: '<span class="status-dot"></span> Open to entry-level opportunities', hello: "Hello, I'm", heroRole: 'Mechatronics Engineering Graduate',
     heroTags: 'Robotics <span>·</span> Automation <span>·</span> Embedded Systems <span>·</span> Web Development',
     heroDescription: 'I build practical solutions at the intersection of hardware, software, and intelligent systems, from robotics projects to WordPress websites.',
     exploreProjects: 'Explore my projects <span aria-hidden="true">↗</span>', profileStatus: '<span class="status-dot"></span> Mechatronics Engineer', currentFocus: 'CURRENT FOCUS', focusHeading: 'Turning ideas into working systems.',
@@ -24,7 +24,7 @@ const translations = {
   },
   ar: {
     skip: 'انتقل إلى المحتوى', navAbout: 'نبذة عني', navProjects: 'المشاريع', navWeb: 'تطوير الويب', navSkills: 'المهارات', navContact: 'تواصل معي',
-    downloadCV: 'تحميل السيرة الذاتية', menu: 'القائمة', close: 'إغلاق', openToWork: '<span class="status-dot"></span> متاح للفرص الوظيفية للمبتدئين', hello: 'مرحباً، أنا', heroRole: 'خريج هندسة الميكاترونيك',
+    downloadCV: 'تحميل السيرة الذاتية', emailSocial: 'البريد الإلكتروني ↗', accuracyPill: 'دقة 92٪', skillMicrocontrollers: 'المتحكّمات الدقيقة', skillSensors: 'الحساسات والمشغّلات', skillComputerVision: 'الرؤية الحاسوبية', skillHardwareTroubleshooting: 'تشخيص أعطال الأجهزة', skillPLC: 'برمجة المتحكّمات المنطقية PLC', skillFuzzyLogic: 'المنطق الضبابي', skillPID: 'التحكّم PID', logoAlt: 'شعار AY', menu: 'القائمة', close: 'إغلاق', openToWork: '<span class="status-dot"></span> متاح للفرص الوظيفية للمبتدئين', hello: 'مرحباً، أنا', heroRole: 'خريج هندسة الميكاترونيك',
     heroTags: 'الروبوتات <span>·</span> الأتمتة <span>·</span> الأنظمة المضمنة <span>·</span> تطوير الويب',
     heroDescription: 'أطوّر حلولاً عملية تجمع بين الأجهزة والبرمجيات والأنظمة الذكية، بدءاً من مشاريع الروبوتات وصولاً إلى مواقع ووردبريس.',
     exploreProjects: 'استكشف مشاريعي <span aria-hidden="true">↗</span>', profileStatus: '<span class="status-dot"></span> مهندس ميكاترونيك', currentFocus: 'مجالات التركيز الحالية', focusHeading: 'أحوّل الأفكار إلى أنظمة عملية.',
@@ -57,6 +57,10 @@ function applyLanguage(language) {
   document.querySelectorAll('[data-i18n]').forEach((element) => {
     const key = element.dataset.i18n;
     if (t[key] !== undefined) element.innerHTML = t[key];
+  });
+  document.querySelectorAll('[data-i18n-alt]').forEach((element) => {
+    const key = element.dataset.i18nAlt;
+    if (t[key] !== undefined) element.setAttribute('alt', t[key]);
   });
   document.querySelectorAll('[data-i18n-aria]').forEach((element) => {
     const key = element.dataset.i18nAria;
