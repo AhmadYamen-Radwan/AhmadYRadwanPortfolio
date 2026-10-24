@@ -1,24 +1,25 @@
 # Ahmad Yamen Radwan Portfolio
 
-A personal portfolio website for Ahmad Yamen Radwan, a Mechatronics Engineering graduate focused on robotics, automation, embedded systems, and WordPress development.
+A personal portfolio website showcasing my work in robotics, automation, embedded systems, computer vision, and WordPress development.
+
+<p align="center">
+  <a href="https://ahmadyamen-radwan.github.io/AhmadYRadwanPortfolio/">
+    <img src="https://img.shields.io/badge/Live%20Portfolio-Visit%20Site-blue?style=for-the-badge" alt="Live Portfolio" />
+  </a>
+</p>
 
 ## Overview
 
-This portfolio showcases:
+This portfolio highlights:
 
 - Robotics and automation projects
-- Embedded systems and computer vision work
-- WordPress website development experience
-- Skills in engineering, web technologies, and practical problem solving
-- Contact and CV download links
+- Embedded systems and control engineering work
+- Computer vision and AI-related applications
+- WordPress website design and development
+- Engineering problem solving and practical implementation
+- Resume / CV download and contact information
 
-The website is built as a static responsive portfolio using HTML, CSS, and JavaScript.
-
-## Live Portfolio
-
-Visit the site here:
-
-- https://ahmadyamen-radwan.github.io/AhmadYRadwanPortfolio/
+The site is built as a responsive static portfolio using HTML, CSS, and JavaScript.
 
 ## About Me
 
@@ -31,17 +32,18 @@ I am a Mechatronics Engineering graduate from Latakia University with a strong i
 - Computer vision
 - WordPress web development
 
-I enjoy turning ideas into practical systems that connect engineering with real-world applications.
+I enjoy transforming ideas into practical systems that connect engineering with real-world applications.
 
 ## Featured Projects
 
 ### 1. Attendance Tracking Robot
+
 A thesis project focused on an autonomous robot that:
 
-- follows a line route between offices
-- stops at each location
-- captures faces using ESP32-CAM
-- recognizes individuals using OpenFace and computer vision
+- follows a line route between office locations
+- stops at each point
+- captures faces using an ESP32-CAM module
+- recognizes individuals using computer vision and OpenFace
 - logs attendance with timestamps
 
 Technologies used:
@@ -54,12 +56,13 @@ Technologies used:
 - JSON-based employee database
 
 ### 2. StoreBot — Store Delivery Robot
+
 An autonomous delivery robot designed to carry products from a store to customers with:
 
 - GPS navigation
 - obstacle avoidance
 - RFID-based authorization
-- web page and database coordination
+- web interface and database coordination
 - smart delivery flow management
 
 Technologies used:
@@ -72,7 +75,8 @@ Technologies used:
 - Embedded control systems
 
 ### 3. WordPress Website Development
-I also design and build practical websites, including business and tourism-focused web experiences using WordPress and modern page-building tools.
+
+I also design and build practical websites for businesses and tourism-focused projects using WordPress and modern page-building tools.
 
 Example stack:
 
@@ -86,6 +90,7 @@ Example stack:
 ## Skills
 
 ### Engineering & Embedded Systems
+
 - Python
 - C++
 - Arduino
@@ -95,6 +100,7 @@ Example stack:
 - Hardware troubleshooting
 
 ### Robotics & Automation
+
 - PLC ladder logic
 - Fuzzy logic
 - PID control
@@ -102,12 +108,14 @@ Example stack:
 - Industrial automation concepts
 
 ### AI & Computer Vision
+
 - OpenFace
 - Computer vision
 - PyTorch
 - TensorFlow
 
 ### Web & Digital Tools
+
 - HTML
 - CSS
 - JavaScript
@@ -123,22 +131,25 @@ Example stack:
 ├── assets/
 │   ├── images/
 │   ├── Ahmad-Yamen-Radwan.pdf
-│   └── yh
+│   └── ...
 ├── index.html
 ├── style.css
 ├── script.js
 ├── LICENSE
-└── README.md
+├── README.md
+└── ...
 ```
 
 ## Run Locally
 
-Because this is a static portfolio website, you can view it locally in several ways:
+Because this is a static portfolio website, you can view it locally in several ways.
 
 ### Option 1: Open directly
-Open `index.html` in a browser.
+
+Open `index.html` in your browser.
 
 ### Option 2: Use a local server
+
 From the project root, run:
 
 ```bash
@@ -163,4 +174,4 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 ## Note
 
-This repository reflects a personal portfolio website designed to present a blend of mechatronics engineering, robotics, automation, and web development work.
+This repository showcases a personal portfolio website designed to present a blend of mechatronics engineering, robotics, automation, and web development work.
