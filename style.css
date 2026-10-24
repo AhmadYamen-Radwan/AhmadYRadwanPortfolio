@@ -501,92 +501,61 @@ h1 {
 }
 
 /* ========================================
-   LANGUAGE TOGGLE
+   BILINGUAL LANGUAGE SWITCH + ARABIC RTL
 ======================================== */
-
 .language-toggle {
   display: inline-flex;
+  flex: 0 0 auto;
   align-items: center;
   justify-content: center;
   min-height: 34px;
   padding: 0 12px;
   border: 1px solid var(--line);
   border-radius: 999px;
-  background: rgba(0, 245, 255, 0.05);
+  background: rgba(0, 245, 255, .05);
   color: var(--accent);
   font: inherit;
-  font-size: 0.8rem;
+  font-size: .8rem;
   font-weight: 700;
   cursor: pointer;
+  transition: border-color .2s ease, background .2s ease;
 }
-
-.language-toggle:hover {
-  border-color: var(--accent);
-}
-
-/* ========================================
-   ARABIC / RTL SUPPORT
-======================================== */
+.language-toggle:hover { border-color: var(--accent); background: rgba(0, 245, 255, .1); }
+.language-toggle:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
 
 html[dir="rtl"] body {
-  font-family: Tahoma, Arial, sans-serif;
+  font-family: Tahoma, Arial, "Segoe UI", sans-serif;
   line-height: 1.8;
 }
-
-html[dir="rtl"] .eyebrow {
-  letter-spacing: 0;
-}
-
+html[dir="rtl"] .eyebrow,
+html[dir="rtl"] .card-kicker,
+html[dir="rtl"] .visual-label,
+html[dir="rtl"] .web-project-category { letter-spacing: 0; }
+html[dir="rtl"] .nav-links,
 html[dir="rtl"] .hero-card-footer,
 html[dir="rtl"] .heading-row,
-html[dir="rtl"] .project-meta {
-  direction: rtl;
-}
-
-html[dir="rtl"] .visual-label {
-  left: auto;
-  right: 14px;
-  letter-spacing: 0;
-}
-
-html[dir="rtl"] .web-project-overlay {
-  left: auto;
-  right: 10px;
-}
-
-html[dir="rtl"] .skip-link {
-  left: auto;
-  right: -999px;
-}
-
-html[dir="rtl"] .skip-link:focus {
-  left: auto;
-  right: 10px;
-}
-
-html[dir="rtl"] .hero-tags span {
-  padding-inline: 4px;
-}
-
-html[dir="rtl"] .nav-links {
-  direction: rtl;
-}
-
+html[dir="rtl"] .project-meta,
 html[dir="rtl"] .tag-list,
 html[dir="rtl"] .skill-items,
 html[dir="rtl"] .social-links,
-html[dir="rtl"] .web-project-tags {
-  direction: rtl;
-}
-
-html[dir="rtl"] .project-details-toggle {
-  direction: rtl;
-}
-
+html[dir="rtl"] .web-project-tags { direction: rtl; }
+html[dir="rtl"] .visual-label { left: auto; right: 14px; }
+html[dir="rtl"] .web-project-overlay { left: auto; right: 10px; }
+html[dir="rtl"] .skip-link { left: auto; right: -999px; }
+html[dir="rtl"] .skip-link:focus { left: auto; right: 10px; }
+html[dir="rtl"] .project-details-toggle { direction: rtl; }
+html[dir="rtl"] .education-card { text-align: right; }
+html[dir="rtl"] .hero-card-content,
+html[dir="rtl"] .project-body,
+html[dir="rtl"] .web-project-content,
+html[dir="rtl"] .skill-panel { text-align: right; }
+html[dir="rtl"] .focus-row { flex-direction: row; }
+html[dir="rtl"] .web-project-content { align-items: flex-start; }
+html[dir="rtl"] .footer { direction: rtl; }
+html[dir="rtl"] .contact-actions > span { direction: ltr; }
+html[dir="rtl"] .brand { direction: ltr; }
 @media (max-width: 680px) {
-  html[dir="rtl"] .nav-links {
-    left: 0;
-    right: 0;
-    text-align: right;
-  }
+  .language-toggle { margin-left: auto; }
+  html[dir="rtl"] .language-toggle { margin-left: 0; margin-right: auto; }
+  html[dir="rtl"] .nav-links { left: 0; right: 0; text-align: right; }
 }
