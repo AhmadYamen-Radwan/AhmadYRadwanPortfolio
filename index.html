@@ -13,7 +13,7 @@
 <a class="skip-link" data-i18n="skip" href="#main">Skip to content</a>
 <header class="site-header">
 <nav aria-label="Main navigation" class="nav container" data-i18n-aria="mainNavigation">
-<a aria-label="Ahmad Yamen Radwan home" class="brand" data-i18n-aria="brandHome" href="#home">AY<span>.</span></a>
+<a aria-label="Ahmad Yamen Radwan home" class="brand" data-i18n-aria="brandHome" href="#home"><img class="brand-logo" src="assets/images/ay-logo.svg" alt="AY logo" data-i18n-alt="logoAlt"/></a>
 <button aria-label="Switch to Arabic" class="language-toggle" id="language-toggle" lang="ar" type="button">العربية</button><button aria-controls="nav-links" aria-expanded="false" class="menu-toggle">Menu</button>
 <div class="nav-links" id="nav-links">
 <a data-i18n="navAbout" href="#about">About</a>
@@ -44,7 +44,7 @@
 <div class="social-links">
 <a aria-label="LinkedIn profile" href="https://www.linkedin.com/in/ahmad-radwan-85393b20b">LinkedIn ↗</a>
 <a aria-label="GitHub profile" href="https://github.com/AhmadYamen-Radwan">GitHub ↗</a>
-<a href="mailto:ahmad.yamen.radwan@gmail.com">Email ↗</a>
+<a data-i18n="emailSocial" href="mailto:ahmad.yamen.radwan@gmail.com">Email ↗</a>
 </div>
 </div>
 <aside aria-label="Professional focus" class="hero-card" data-i18n-aria="professionalFocus">
@@ -121,7 +121,7 @@
 <span class="visual-label" data-i18n="attendanceLabel">ROBOTICS / COMPUTER VISION</span>
 </div>
 <div class="project-body">
-<div class="project-meta"><span data-i18n="attendanceMeta">01 / THESIS PROJECT</span><span class="pill">92% accuracy</span></div>
+<div class="project-meta"><span data-i18n="attendanceMeta">01 / THESIS PROJECT</span><span class="pill" data-i18n="accuracyPill">92% accuracy</span></div>
 <h3 data-i18n="attendanceTitle">Attendance Tracking Robot</h3>
 <p data-i18n="attendanceDescription">An autonomous 4-wheeled robot that follows a line route between offices, stops at each one to scan faces
               with an ESP32-CAM + OpenFace pipeline, and logs attendance with timestamps.</p>
@@ -213,21 +213,21 @@
 <div class="skill-panel"><span class="skill-number">01</span>
 <h3 data-i18n="skillOne">Programming &amp; embedded</h3>
 <div class="skill-items"><span>Python</span><span>C++</span><span>Arduino /
-              ESP32</span><span>Microcontrollers</span></div>
+              ESP32</span><span data-i18n="skillMicrocontrollers">Microcontrollers</span></div>
 </div>
 <div class="skill-panel"><span class="skill-number">02</span>
 <h3 data-i18n="skillTwo">Robotics &amp; automation</h3>
-<div class="skill-items"><span>PLC Ladder Logic</span><span>Fuzzy Logic</span><span>PID
-              Control</span><span>Sensors &amp; Actuators</span><span>GPS / RFID</span></div>
+<div class="skill-items"><span data-i18n="skillPLC">PLC Ladder Logic</span><span data-i18n="skillFuzzyLogic">Fuzzy Logic</span><span data-i18n="skillPID">PID
+              Control</span><span data-i18n="skillSensors">Sensors &amp; Actuators</span><span>GPS / RFID</span></div>
 </div>
 <div class="skill-panel"><span class="skill-number">03</span>
 <h3 data-i18n="skillThree">AI &amp; computer vision</h3>
-<div class="skill-items"><span>OpenFace</span><span>Computer
+<div class="skill-items"><span>OpenFace</span><span data-i18n="skillComputerVision">Computer
               Vision</span><span>PyTorch</span><span>TensorFlow</span></div>
 </div>
 <div class="skill-panel"><span class="skill-number">04</span>
 <h3 data-i18n="skillFour">Web &amp; technical tools</h3>
-<div class="skill-items"><span>WordPress</span><span>HTML / CSS</span><span>SolidWorks</span><span>Linux</span><span>Hardware
+<div class="skill-items"><span>WordPress</span><span>HTML / CSS</span><span>SolidWorks</span><span>Linux</span><span data-i18n="skillHardwareTroubleshooting">Hardware
               troubleshooting</span></div>
 </div>
 </div>
@@ -246,7 +246,7 @@
 </div>
 </section>
 </main>
-<footer class="footer container"><a class="brand" data-i18n-aria="brandHome" href="#home">AY<span>.</span></a><span data-i18n="footerTagline">Designed to connect
+<footer class="footer container"><a class="brand" data-i18n-aria="brandHome" href="#home"><img class="brand-logo" src="assets/images/ay-logo.svg" alt="AY logo" data-i18n-alt="logoAlt"/></a><span data-i18n="footerTagline">Designed to connect
       engineering with the digital world.</span><a data-i18n="backToTop" href="#home">Back to top ↑</a></footer>
 </body>
 </html>
